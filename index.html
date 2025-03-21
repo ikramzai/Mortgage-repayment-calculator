@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="calculator">   
+        <h1>Mortgage Calculator</h1>
+        <button>Clear All</button>
+      </div>
+      <div class="amount">
+        <h4>Mortgage Amount</h4>
+        <input type="number" id="mortgage-amount">
+        <label for="mortgage-amount">£</label>
+      </div>
+      <div class="term">
+        <h4>Mortgage Term</h4>
+        <input type="number" id="mortgage-term">
+        <label for="mortgage-term">years</label>
+        <h4>Interst Rate</h4>
+        <input type="number" id="interst-rate">
+        <label for="interst-rate">%</label>
+      </div>
+
+       <div class="type">
+        <h4>Mortgage Type</h4>
+        <input type="radio" id="repayment" >
+        <label for="repayment">Repayment</label><br>
+        <input type="radio" id="interst-only"  >
+        <label for="interst-only">Interst Only</label>
+      </div>
+      
+
+      <button>Calculate Repayments</button>
+
+    </div>
+    <div class="right">
+      <img src="/assets/images/illustration-empty.svg" alt="">
+      <h2>Resuls shown here</h2>
+      <p>Complete the form and click "Calculate repayment" to see what your monthly repayment would be .</p>
+    </div>
+  </div>
+</body>
+
+</html>
