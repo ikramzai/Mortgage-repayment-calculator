@@ -1,40 +1,119 @@
+*{
+  margin-left: 10px;
+  padding: 0;
+}
 body{
-    font-family:;
     background-color: hsl(202, 86%, 94%);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     
+   
     .container{
-        border-radius: 10px; 
+        border-radius: 20px; 
         display: flex;
+        justify-content: space-between;
         background-color: hsl(0, 0%, 100%);
-        height: 70vh;
-      
-        h4{
-          color: hsl(200, 24%, 40%);
-        }
-      }
-      .left{
+        height: 75vh;
+        width: 63vw;
+        
+        h2{
+          color: hsl(202, 55%, 16%);
+          margin-top: 0;
+          margin-bottom: 0;
+         }
+
+        .left{
+          border-radius: 20px; 
           display: flex;
           flex-direction: column;
+          justify-content: space-evenly;
           background-color: hsl(0, 0%, 100%);
           width: 30vw;
 
+          
+        h4{
+          color: hsl(200, 26%, 54%);
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
           .calculator{
             display: flex;
             justify-content: space-between;
+
+            button{
+              border-style: none;
+              background-color: hsl(0, 0%, 100%);
+              color: hsl(200, 24%, 40%);
+            }
           }
 
           .amount{
             display: flex;
-            flex-direction: column;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            
+
+            label{
+              background-color: hsl(202, 86%, 94%);
+              border-radius: 10px;
+              margin: 0;
+            
+            }
           }
-          
-          .term{
+          .rate-term{
             display: flex;
+            justify-content: space-between;
+            margin-left: 0;
+            .term{
+              padding: 8px;
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              label{
+                background-color: hsl(202, 86%, 94%);
+                margin: 0;
+              }  
+            }
+            .rate{
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              padding: 8px;
+              label{
+                background-color: hsl(202, 86%, 94%);
+                margin: 0;
+              } 
+            }
+        
           }
+        
+          input{
+            border-style: none;
+          }
+          .type{
+           
+          
+            .interst-only{
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              padding: 8px;
+            }
+            .repayment{
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-bottom: 15px;
+            }  
+          }
+         
+         
+
+        
       }
       .right{
           display: flex;
@@ -45,8 +124,30 @@ body{
           border-radius: 0px 20px 20px 55px;
           background-color: hsl(202, 55%, 16%);
           width: 30vw;
-          
+          h2{
+            color: hsl(0, 0%, 100%);;
+          }
+          p{
+            color: hsl(200, 26%, 54%);
+            margin-left: 20px;
+            font-size: 16px;
+          }
           
       }
-
+      .button{
+        background: hsl(61, 70%, 52%);
+        color: hsl(202, 55%, 16%);
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border:  #ccc;
+        border-radius: 30px;
+        
+      
+      }
+      }
+    
 }

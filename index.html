@@ -26,34 +26,49 @@
 <body>
   <div class="container">
     <div class="left">
-      <div class="calculator">   
-        <h1>Mortgage Calculator</h1>
-        <button>Clear All</button>
+      <div class="calculator">
+        <h2>Mortgage Calculator</h2>
+        <button><a href="#">Clear All</a></button>
       </div>
+      <div>
+      <h4>Mortgage Amount</h4>
       <div class="amount">
-        <h4>Mortgage Amount</h4>
-        <input type="number" id="mortgage-amount">
         <label for="mortgage-amount">£</label>
+        <input type="number" id="mortgage-amount">
       </div>
-      <div class="term">
-        <h4>Mortgage Term</h4>
-        <input type="number" id="mortgage-term">
-        <label for="mortgage-term">years</label>
-        <h4>Interst Rate</h4>
-        <input type="number" id="interst-rate">
-        <label for="interst-rate">%</label>
+      </div>
+      <div class="rate-term">
+        <div>
+          <h4>Mortgage Term</h4>
+          <div class="term">
+            <input type="number" id="mortgage-term">
+            <label for="mortgage-term">years</label>
+          </div>
+        </div>
+        <div>
+          <h4>Interst Rate</h4>
+          <div class="rate">
+            <input type="number" id="interst-rate">
+            <label for="interst-rate">%</label>
+          </div>
+        </div>
       </div>
 
-       <div class="type">
-        <h4>Mortgage Type</h4>
-        <input type="radio" id="repayment" >
+      <div class="type">
+      <h4>Mortgage Type</h4>
+      <div class="repayment">
+        <input type="radio" id="repayment">
         <label for="repayment">Repayment</label><br>
-        <input type="radio" id="interst-only"  >
+      </div>
+      <div class="interst-only">
+        <input type="radio" id="interst-only">
         <label for="interst-only">Interst Only</label>
       </div>
-      
+      </div>
 
-      <button>Calculate Repayments</button>
+
+      <button class="button"> <img src="/assets/images/icon-calculator.svg"> Calculate Repayments</button>
+
 
     </div>
     <div class="right">
