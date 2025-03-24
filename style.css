@@ -1,153 +1,184 @@
-*{
-  margin-left: 10px;
+* {
+  margin: 0;
   padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;}
+
+body {
+  background-color: hsl(202, 86%, 94%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
-body{
-    background-color: hsl(202, 86%, 94%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-   
-    .container{
-        border-radius: 20px; 
-        display: flex;
-        justify-content: space-between;
-        background-color: hsl(0, 0%, 100%);
-        height: 75vh;
-        width: 63vw;
-        
-        h2{
-          color: hsl(202, 55%, 16%);
-          margin-top: 0;
-          margin-bottom: 0;
-         }
 
-        .left{
-          border-radius: 20px; 
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          background-color: hsl(0, 0%, 100%);
-          width: 30vw;
+.container {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 1000px;
+ 
+}
 
-          
-        h4{
-          color: hsl(200, 26%, 54%);
-          margin-top: 0;
-          margin-bottom: 10px;
-        }
-          .calculator{
-            display: flex;
-            justify-content: space-between;
+h2 {
+  color: hsl(202, 55%, 16%);
+  margin-bottom: 0;
+}
 
-            button{
-              border-style: none;
-              background-color: hsl(0, 0%, 100%);
-              color: hsl(200, 24%, 40%);
-            }
-          }
+h4 {
+  color: hsl(200, 26%, 54%);
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
 
-          .amount{
-            display: flex;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 8px;
-            
+.left {
+  padding: 25px;
+}
 
-            label{
-              background-color: hsl(202, 86%, 94%);
-              border-radius: 10px;
-              margin: 0;
-            
-            }
-          }
-          .rate-term{
-            display: flex;
-            justify-content: space-between;
-            margin-left: 0;
-            .term{
-              padding: 8px;
-              display: flex;
-              justify-content: space-between;
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              label{
-                background-color: hsl(202, 86%, 94%);
-                margin: 0;
-              }  
-            }
-            .rate{
-              display: flex;
-              justify-content: space-between;
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              padding: 8px;
-              label{
-                background-color: hsl(202, 86%, 94%);
-                margin: 0;
-              } 
-            }
-        
-          }
-        
-          input{
-            border-style: none;
-          }
-          .type{
-           
-          
-            .interst-only{
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              padding: 8px;
-            }
-            .repayment{
-              padding: 8px;
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              margin-bottom: 15px;
-            }  
-          }
-         
-         
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
 
-        
-      }
-      .right{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          color: hsl(0, 0%, 100%);
-          border-radius: 0px 20px 20px 55px;
-          background-color: hsl(202, 55%, 16%);
-          width: 30vw;
-          h2{
-            color: hsl(0, 0%, 100%);;
-          }
-          p{
-            color: hsl(200, 26%, 54%);
-            margin-left: 20px;
-            font-size: 16px;
-          }
-          
-      }
-      .button{
-        background: hsl(61, 70%, 52%);
-        color: hsl(202, 55%, 16%);
-        font-weight: bold;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        border:  #ccc;
-        border-radius: 30px;
-        
-      
-      }
-      }
-    
+.calculator button {
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 24%, 40%);
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.amount {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.amount label {
+  background-color: hsl(202, 86%, 94%);
+}
+
+.amount input {
+  flex-grow: 1;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.rate-term {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+
+.term, .rate {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+ 
+}
+
+.term label, .rate label {
+  background-color: hsl(202, 86%, 94%);
+}
+
+.term input, .rate input {
+  width: 60%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  
+}
+
+.type {
+  margin-bottom: 20px;
+}
+
+.repayment, .interest-only {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  accent-color: hsl(61, 70%, 52%);
+}
+
+.repayment input, .interest-only input {
+  margin-right: 10px;
+}
+
+.button {
+  background: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 85%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(202, 55%, 16%);
+  padding: 40px 20px;
+  text-align: center;
+  
+}
+
+.right h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+
+.right p {
+  color: hsl(200, 26%, 54%);
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    border-radius: 20px;
+  }
+  
+  .left {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .rate-term {
+    flex-direction: row;
+  }
+  
+  .right {
+    width: 50%;
+    border-radius: 0 20px 20px 55px;
+  }
 }
