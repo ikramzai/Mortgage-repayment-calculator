@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
@@ -24,20 +23,19 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <div class="left">
       <div class="calculator">
         <h2>Mortgage Calculator</h2>
-        <button><a href="#">Clear All</a></button>
+        <button id="clearAll">Clear All</button>
       </div>
       
       <div>
         <h4>Mortgage Amount</h4>
         <div class="amount">
-          <p>£</p>
-          <input type="number" id="mortgage-amount">
+          <label>£</label>
+          <input type="number" id="mortgageAmount">
         </div>
       </div>
       
@@ -45,15 +43,15 @@
         <div>
           <h4>Mortgage Term</h4>
           <div class="term">
-            <input type="number" id="mortgage-term">
-            <p>years</p>
+            <input type="number" id="mortgageTerm">
+            <label>years</label>
           </div>
         </div>
         <div>
           <h4>Interest Rate</h4>
           <div class="rate">
-            <input type="number" id="interest-rate">
-            <p>%</p>
+            <input type="number" id="interestRate">
+            <label>%</label>
           </div>
         </div>
       </div>
@@ -61,23 +59,25 @@
       <div class="type">
         <h4>Mortgage Type</h4>
         <div class="repayment">
-          <input type="radio" id="repayment" name="mortgage-type">
+          <input type="radio" id="repayment" name="mortgage-type" value="repayment" checked>
           <label for="repayment">Repayment</label>
         </div>
         <div class="interest-only">
-          <input type="radio" id="interest-only" name="mortgage-type" >
+          <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
           <label for="interest-only">Interest Only</label>
         </div>
       </div>
 
-
-      <button class="button"> <img src="/assets/images/icon-calculator.svg"> Calculate Repayments</button>
-
+      <button class="button" id="calculateBtn">Calculate Repayments</button>
     </div>
-    <div class="right">
+    
+    <div class="right" id="results">
       <img src="/assets/images/illustration-empty.svg" alt="Calculator illustration">
       <h2>Results shown here</h2>
       <p>Complete the form and click "Calculate repayment" to see what your monthly repayment would be.</p>
+      <div id="monthlyPayment"></div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
